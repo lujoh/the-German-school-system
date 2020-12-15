@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>The German School System
+    </title>
+    <link rel="stylesheet" href="FPCSS.css" type="text/css">
+    <!--Link to CSS file-->
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+</head>
+<body> 
+    <div class="outline">
+    <div class="header"> <!--The header div-->
+        <h1>The German School System</h1>
+    </div>
+    <div class="nav" id="Navigation"><!--Navigation Bar-->
+        <ul>
+            <li ><a href="#" class="menuIcon" onclick="toggleNav()">&#9776;</a></li>
+            <li ><a href="FPHome.html" >Homepage</a></li>
+            <li ><a href="FPPrimary.html" >Primary</a></li>
+            <li ><a href="FPSecondary.html"  id="current">Secondary</a></li>
+            <li ><a href="FPPost.html" >Post-Secondary</a></li>
+            <li ><a href="FPStats.html" >Statistics</a></li>
+        </ul>
+    </div>
+    <div class="container"><!--Container for inner navigation-->
+        <div class="innav">
+            <h5 class="innav">Go to:</h5>
+            <ul class="innav"><!--Internal navigation to navigate the page-->
+                <li class="innav"><a href="#Intro">Introduction</a></li>
+                <li class="innav"><a href="#Hauptschule">Hauptschule</a></li>
+                <li class="innav"><a href="#Realschule">Realschule</a></li>
+                <li class="innav"><a href="#Gymnasium">Gymnasium</a></li>
+                <li class="innav"><a href="#Gesamtschule">Gesamtschule</a></li>
+                <li class="innav"><a href="#Sources">Sources</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    
+        
+<!--Container for the main content. Container can be copied to use multiple times-->     
+        <div class="container">
+        <div class="left"><!--Container for content on the left-->
+            <h4 id="Intro">Introduction</h4>
+            <p>Students are typically separated into one of the first three school types after grade school. Placement in these schools depends on students’ grades in fourth grade and a teacher recommendation. While friendships that are formed in grade school often survive for a little while afterwards, in my experience, students who go to different schools often don’t have very much contact after the first few years. Friendships are mostly formed between people who go to the same school and there is stereotyping between people of different schools.</p>
+        </div>
+        <div class="right"><!--Container for content on the right-->
+            <h4 id="Hauptschule">Hauptschule</h4>
+            <p>The Hauptschule is the first option for students to go to after grade school. It is the school where the students with the lowest grades in fourth grade go to. Students who start at one of the two higher schools and don’t succeed there are also often put into the Hauptschule instead. The Hauptschule lasts five-six years until ninth or tenth grade, depending on the state. In some areas the tenth grade is voluntary for students who want a better degree. With a degree from the Hauptschule students are not qualified attend a University. They would have to continue their education to receive a different degree to allow them to attend University. Trade jobs and service jobs are common among students who graduated from the Hauptschule.  The curriculum at the Hauptschule is geared to prepare students for the workforce. They take part in multiple internships to help them find a field they want to get into. Another focus of the Hauptschule is to overcome social issues so the curriculum includes things like addiction and violence prevention (<a href="#Sources">1</a>). Changing between the different types of school is difficult after sixth grade, because the schools cover subjects at a different pace and in a different order.</p>
+        </div>
+    </div>     
+<!--End of one inner navigation container Copy until here-->
+<!--Container for the main content. Container can be copied to use multiple times-->     
+        <div class="container">
+        <div class="left"><!--Container for content on the left-->
+            <h4 id="Realschule">Realschule</h4>
+            <p>The Realschule is the second option for students after the Grundschule. Students with a mid-level range of grades go to the Realschule. Their performance is monitored during the first few years to see if they aren’t better suited for one of the other types of schools. A change between schools is theoretically possible until ninth grade. Realschule lasts from fifth grade to tenth grade, at the end of which students receive the Mittlere Reife, a degree which doesn’t qualify students to study at universities, but lets them study at vocational schools, start apprenticeships, become mid-level officials and continue their education to get the third level degree which would allow them to qualify for universities (<a href="#Sources">2</a>). Academically the Realschule is a balance between practical knowledge in subjects like home economics and more academic subjects like a second foreign language after English, which is usually not offered at the Hauptschule. The Mittlere Reife is generally considered equivalent to a US high school degree.</p>
+        </div>
+        <div class="right"><!--Container for content on the right-->
+            <img src="Real.jpg" alt="View of Buildings">
+        </div>
+    </div>     
+<!--End of one inner navigation container Copy until here-->
+<!--Container for the main content. Container can be copied to use multiple times-->     
+        <div class="container">
+        <div class="left"><!--Container for content on the left-->
+            <img src="Gym.jpg" alt="View of the Josef-Effner Gymnasium">
+            <p><a href="#Sources">Source</a></p>
+            <p>
+                
+                <button type="button" onclick="displayClasses()">Enter</button>
+                a grade level between 5 and 12 here to show what kind of subjects students at Gymnasium might be taking. <br>
+                Most of the classes are typical for all schools, but some may vary. <br>
+                <input type="number" id="gradeLevel">
+            </p>
+            <p id="subjectResult"></p>
+        </div>
+        <div class="right"><!--Container for content on the right-->
+            <h4 id="Gymnasium">Gymnasium</h4>
+            <p>The Gymnasium is the third level school which is meant for the students with the highest-level grades in fourth grade. There is a large amount of pressure on fourth graders to be able to qualify for the Gymnasium. Very talented students who start out at the Hauptschule or Realschule are also able to transfer to the Gymnasium, but in my experience, this is a small percentage of the students. The Gymnasium lasts for eight years until twelfth grade (It used to be nine years until more recently) and is meant to prepare students for University. The degree at the end of the Gymnasium (Abitur), is an intense test in multiple subjects that spans over multiple weeks. It qualifies students not only to study at Universities, but also for all the other educational options that the other schools’ degrees offer, but University attendance is subconsciously encouraged. The curriculum at the Gymnasium has a more academic focus. A second foreign language, besides English, is introduced in sixth grade and students chose a focus in eighth grade. The focuses offered vary from school to school, but typical options are linguistic (with a third foreign language), scientific, artistic and economic. At the end of tenth grade students automatically receive the Mittlere Reife and the last two years of Gymnasium are more focused on preparing students for the future. Students have the option to choose within a framework which subjects to continue, and two seminars, a project and an academic seminar, are added. The seminars can have a wide variety of different topics and are meant to prepare the students to study in academics, organize projects in a work field and make a portfolio.</p>
+        </div>
+    </div>     
+<!--End of one inner navigation container Copy until here-->
+<!--Container for the main content. Container can be copied to use multiple times-->     
+        <div class="container">
+        <div class="left"><!--Container for content on the left-->
+            <h4 id="Gesamtschule">Gesamtschule</h4>
+            <p>The Gesamtschule is a concept that is growing in popularity but is only common in some German states so far. It is a combination school that either combines Realschule and Hauptschule or all three schools in one. Students study at the same school and may be separated into different groups in certain subjects. The idea is that it is beneficial for all students to spend more time together with others who are different from them and that weaker students will learn from stronger students. It is also supposed to help reduce inequal opportunities based on a student’s social background. There is a discussion between people who support this system and people who think it harms students’ academic performance and doesn’t help with better social integration (<a href="#Sources">3</a>). At the Gesamtschule students have the option to get the same degrees as they would at the Hauptschule and Realschule and if their grades are good, they can often go to a different school to continue to the Abitur.</p>
+        </div>
+        <div class="right"><!--Container for content on the right-->
+            <img src="Gesamt.jpg" alt="Stone stairway">
+        </div>
+    </div>     
+<!--End of one inner navigation container Copy until here-->
+        
+    <div class="footer"><!--Footer-->
+        <p class="sign">&copy;2020 Lucia Johnson
+            <br>
+            This page was made for the class "Introduction to Web Technologies" with Mehdi Barati at the <a href="https://www.albany.edu/">University at Albany</a>.
+            <br>
+            <a href="mailto:lejohnson@albany.edu">Contact me</a>
+        </p>
+        <p>Disclaimer: The school system on this page is specific to the German state of Bavaria. Other German states may have slight differences in their system.</p>
+        <p id="Sources">Sources:<br>
+            Unless otherwise specified images are my own 
+            <br>
+            Background image by <a href="https://pixabay.com/users/Shafin_Protic-16278454/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5375259">Shafin Al Asad Protic</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5375259">Pixabay</a>
+            <br>
+            Image of Josef Effner Gymnasium by <a href="https://commons.wikimedia.org/wiki/File:Josef-Effner-Gymnasium-1997.jpg" title="via Wikimedia Commons">Sinn</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a>
+            <br>
+            Code for mobile menu via <a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">W3 Schools</a>
+            <br>
+            1.<a href="https://www.bildungsxperten.net/wissen/was-ist-die-hauptschule/">https://www.bildungsxperten.net/wissen/was-ist-die-hauptschule/</a> 
+            <br>
+            2.<a href="https://www.bildungsxperten.net/wissen/realschule-besondere-praxisorientierung/">https://www.bildungsxperten.net/wissen/realschule-besondere-praxisorientierung/</a>
+            <br>
+            3.<a href="https://www.bildungsxperten.net/wissen/was-ist-die-gesamtschule/">https://www.bildungsxperten.net/wissen/was-ist-die-gesamtschule/</a>
+        </p>
+    </div>
+    </div>
+    
+    <!--Place to enter script-->
+    <script src="FPfunctions.js" type="text/javascript"></script>
+</body>
+</html>

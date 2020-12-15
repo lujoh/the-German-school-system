@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>The German School System
+    </title>
+    <link rel="stylesheet" href="FPCSS.css" type="text/css">
+    <!--Link to CSS file-->
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+</head>
+<body onload="comparetime()"> 
+    <div class="outline">
+    <div class="header"> <!--The header div-->
+        <h1>The German School System</h1>
+    </div>
+    <div class="nav" id="Navigation"><!--Navigation Bar-->
+        <ul>
+            <li><a href="#" class="menuIcon" onclick="toggleNav()">&#9776;</a></li>
+            <li><a href="FPHome.html">Homepage</a></li>
+            <li><a href="FPPrimary.html" id="current">Primary</a></li>
+            <li><a href="FPSecondary.html">Secondary</a></li>
+            <li><a href="FPPost.html">Post-Secondary</a></li>
+            <li><a href="FPStats.html">Statistics</a></li>
+            
+        </ul>
+    </div>
+    <div class="container"><!--Container for inner navigation-->
+        <div class="innav">
+            <h5 class="innav">Go to:</h5>
+            <ul class="innav"><!--Internal navigation to navigate the page-->
+                <li class="innav"><a href="#Kindergarten">Kindergarten</a></li>
+                <li class="innav"><a href="#Grundschule">Grundschule</a></li>
+                <li class="innav"><a href="#grades">Grades</a></li>
+                <li class="innav"><a href="#Sources">Sources</a></li>
+            </ul>
+        </div>
+    </div>
+    
+        
+<!--Container for the main content. Container can be copied to use multiple times-->     
+        <div class="container">
+        <div class="left"><!--Container for content on the left-->
+            <h4 id="Kindergarten">Kindergarten</h4>
+            <p>The Kindergarten is for children from the age of around three years old until they start grade school at six or seven years old. It is comparable to preschool in America. Attending a Kindergarten is not mandatory in Germany and, different from the rest of German schooling, it is not free. Children whose parents want to put them in Kindergarten have a legal right to get a spot and the government helps low income parents afford the fees. Despite shortages of spots, a majority of children attend Kindergarten before they start grade school. Kindergartens can be run by the city or by independent organizations like churches, companies or associations. They can operate under different concepts such as Montessori, Waldorf, forest- or bilingual Kindergartens, but the main focus of Kindergartens is typically to improve children’s social, motor and emotional skills and let them play (<a href="#Sources">1</a>). When I was in Kindergarten, we spent our days playing with blocks, dolls or costumes, drawing, playing in the sandbox or being read to and we would go play in the forest once a week, no matter what the weather was like. In the last year of Kindergarten, we spent some time separately from the other children to learn colors and how to write our name.</p>
+        </div>
+        <div class="right"><!--Container for content on the right-->
+            <img src="Kiga.jpg" alt="Child in Kindergarten jumping off of a balance beam">
+        </div>
+    </div>     
+<!--End of one inner navigation container Copy until here-->
+<!--Container for the main content. Container can be copied to use multiple times-->     
+        <div class="container">
+        <div class="left"><!--Container for content on the left-->
+            <img src="Grund.jpg" alt="Two children wearing school backpacks walking on a path">
+        </div>
+        <div class="right"><!--Container for content on the right-->
+            <h4 id="Grundschule">Grundschule</h4>
+            <p>Children typically start grade school (Grundschule) at the age of six. Grade school lasts four years and is mandatory for all children. Homeschooling is not an option in Germany. In typical German grade schools, the school day is very short. School lasts from 8am to somewhere between 11.15am and 1pm depending on the age of the students. In the first two years of grade school students don’t receive grades and the report cards consist of a descriptive evaluation of a student’s skills and behavior. In third and fourth grade students are graded on a scale of 1-6. In grade school students learn the foundations of reading, writing and math and typically have classes in arts and crafts, physical education, English, science and local geography, religion or ethics and music. Fourth grade, the last year of Grundschule in Germany is very important to students’ futures. At the end of fourth grade students, who are typically around ten years old, are sorted into one of three kinds of secondary schools based on their grades in the subjects German, Math and Science/Local Geography and their teacher’s recommendation. In my experience the pressure to get good grades in fourth grade was immense for most students. We usually had homework that would take all afternoon to finish. Many students’ parents got them tutors to help them perform in school. A common thing I heard was that you had to get into the higher-level school so that you would be able to get a good job in the future. Students whose grades don’t clearly fall into one of the three school choices have the option to take a three-day test class which is graded.</p>
+        </div>
+    </div>     
+<!--End of one inner navigation container Copy until here-->
+        
+<!--Container for the main content. Container can be copied to use multiple times-->     
+        <div class="container">
+        <div class="left"><!--Container for content on the left-->
+            <!--Section for the input and results of the function that calculates a grade average and checks which secondary school a student can attend-->
+            <h4 id="grades">Grades required for the transfer to a secondary school</h4>
+            <p>The grades in Germany are on a scale from 1 - 6, with 1 being the best. The grade average required to attend the different secondary schools varies from state to state. In Bavaria students need to get a 2.33 (Which is approximately equivalent to a US B-) or better to attend the Gymnasium and a 2.66 (approximately a US C+) to attend the Realschule. Below you can test out what grade combinations students would need in the main subjects to attend the school they want to.</p>
+            <!--Function inputs-->
+            <p>
+                Enter all your grades in whole numbers between 1 and 6 <br>
+                <input id="grademath" type="number"> Math <br>
+                <input id="gradegerman" type="number"> German <br>
+                <input id="gradehsu" type="number"> Science and local Geography (HSU)<br>
+                <button type="button" onclick="checkGrades()">Calculate Grades</button>
+            </p>
+            <!--Function results-->
+            <p id="gradesResult"></p>
+        </div>
+            
+        <div class="right"><!--Container for content on the right-->
+            <h4>School times</h4>
+            <p>German school times vary depending on the ages of the students. Most schools start at 8:00. Gradeschoolers start out finishing school at 11:30 in the first year and then slowly increase the time to 12:15 or 1pm on a couple days per week. In the different secondary schools school typically ends at 1:00 on most days with older students having classes until 15:15 or (rarely) 17:00 on a couple of days.</p>
+            <p id="timeresult"></p>
+        </div>
+    </div>     
+<!--End of one inner navigation container Copy until here-->
+        
+    <div class="footer"><!--Footer-->
+        <p class="sign">&copy;2020 Lucia Johnson
+            <br>
+            This page was made for the class "Introduction to Web Technologies" with Mehdi Barati at the <a href="https://www.albany.edu/">University at Albany</a>.
+            <br>
+            <a href="mailto:lejohnson@albany.edu">Contact me</a>
+        </p>
+        <p>Disclaimer: The school system on this page is specific to the German state of Bavaria. Other German states may have slight differences in their system.</p>
+        <p id="Sources">Sources:<br>
+            Unless otherwise specified images are my own 
+            <br>
+            Background image by <a href="https://pixabay.com/users/Shafin_Protic-16278454/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5375259">Shafin Al Asad Protic</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5375259">Pixabay.</a>
+            <br>
+            Code for mobile menu via <a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">W3 Schools</a>
+            <br>
+            1. <a href="https://www.kita.de/wissen/kindergarten/">https://www.kita.de/wissen/kindergarten/</a>
+        </p>
+    </div>
+    </div>
+    
+    <!--Place to enter script-->
+    <script src="FPfunctions.js" type="text/javascript"></script>
+</body>
+</html>

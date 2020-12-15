@@ -1,0 +1,146 @@
+body{background-image:url(background_photo.png); 
+    background-repeat:repeat;}
+/*Inserting background image*/
+
+.outline{background-color:white; 
+    width:85%; 
+    margin:auto;}
+.header{background-color:#1841F5; 
+    color:#F5BD18; 
+    padding:5px; 
+    text-align:center; 
+    font-weight:bolder;}
+/*styling the header*/
+
+.nav{background-color:#0826A8; 
+    display:flex; 
+    list-style-type:none; 
+    font-weight:bolder;}
+div.nav{padding:0px;}
+.nav ul{margin:0;padding:0; 
+    list-style-type:none;}
+.nav li{float:left;}
+.nav a{display:block; 
+    padding:10px; 
+    text-decoration:none;}
+#current, .menuIcon{background-color:#052B54; 
+    color:#F5BD18;}
+.nav a:link{color:#F5BD18;}
+.nav a:visited{color:#A87E00;}
+.nav a:hover{background-color:#F5BD18; 
+    color:#1841F5;}
+.nav a:active{background-color:#A87E00; 
+    color:#1841F5;}
+.menuIcon{display:none;}
+/*styling navigation bar*/
+
+.container{margin:auto; 
+    background-color:white; 
+    width:95%; 
+    padding:5px; 
+    display:flex;}
+/*Styling container for main context*/
+
+.innav{background-color:#1841F5; 
+    list-style-type:circle;}
+div.innav{padding:5px; 
+    border-radius:25px; 
+    width:45%; 
+    margin:1%;}
+/*Styling internal navigation*/
+
+.left{float:left;}
+.right{float:left; 
+    clear:right;}
+
+.left, .right{border:5px solid #0826a8; 
+    border-radius:25px; 
+    width:45%; 
+    padding:2%; 
+    margin:1%;}
+.right h4, .left h4, #Requirements{color:#0826ab;}
+/*styling content containers*/
+
+.footer{clear:both; 
+    padding:5px; 
+    background-color:#0826a8; 
+    color:white; 
+    text-align:center;}
+.sign{color:#f5bd18;}
+/*styling footer*/
+
+.footer a:link, .innav a:link{color:#f5bd18;}
+.footer a:visited, .innav a:visited{color:#a87e00;}
+.footer a:hover, .innav a:hover, .footer a:active, .innav a:active{color:#74F500;}
+/*Styling footer and inner navigation links*/
+
+img{width:95%; 
+    margin:2%; 
+    border-radius:25px; 
+    background-color:white;}
+/*specifying image sizes*/
+
+.middle{clear:both; 
+    border:5px solid #0826a8; 
+    border-radius:25px; 
+    padding:2%; 
+    margin:1%; 
+    width:95%; 
+    text-align:center;}
+/*Styling middle div for the Post-Secondary page*/
+
+table{border-collapse:collapse; 
+    width:75%; 
+    margin:auto; 
+    margin-bottom:2%;}
+table, th, td{border:1px solid black; 
+    padding:5px;}
+th{color:#0826ab;}
+tr:nth-child(even){background-color: #d9d9d9;}
+/*Styling table*/
+
+dt{font-weight:bold;}
+dd{font-style:italic;}
+/*Styling description list*/
+
+input{border:thin solid #0826a8; 
+    padding:1%;
+    margin:1%}
+button{background-color:#0826A8; 
+    color:#F5BD18;
+    padding:1%;}
+/*Styling inputs and buttons*/
+
+
+
+/*Change the styling depending on viewport*/
+@media only screen and (max-width: 1100px) and (min-width: 600px) {
+    .outline{width: 95%;}
+}
+/*For tablets, show less background*/
+
+
+@media only screen and (max-width: 600px) {
+    .outline{width: 100%; 
+        margin: 0;}
+    div.innav{width:95%;}
+    body{background-image:none; margin:0;}
+    /*Change size of items, remove background*/
+    
+    .container{display:block;}
+    .left, .right{float:none; width:90%;}
+    /*remove float for left and right containers*/
+    
+    .nav a:not(#current):not(.menuIcon):not(.open){display:none;}
+    .menuIcon{display:block; 
+        float:left;}
+    /*Changing the menu styling*/
+    
+    .nav.open a, .nav.open li{display:block; 
+        float:none; 
+        width:100%;}
+    .nav.open{display:block;}
+    .nav.open a:not(#current):not(.menuIcon):not(.open){display:block;}
+    /*Making the menu visible after clicking*/
+}
+/*for phones*/

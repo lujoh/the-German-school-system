@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>The German School System
+    </title>
+    <link rel="stylesheet" href="FPCSS.css" type="text/css">
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="jquery.magnifier.js">
+        
+
+/***********************************************
+* jQuery Image Magnify- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+    </script>
+    <!--Place to enter script-->
+    <script src="FPfunctions.js" type="text/javascript"></script>
+    <!--Link to CSS file-->
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+</head>
+<body> 
+    <div class="outline">
+    <div class="header"> <!--The header div-->
+        <h1>The German School System</h1>
+    </div>
+    <div class="nav" id="Navigation"><!--Navigation Bar-->
+        <ul>
+            <li ><a href="#" class="menuIcon" onclick="toggleNav()">&#9776;</a></li>
+            <li ><a href="FPHome.html" >Homepage</a></li>
+            <li ><a href="FPPrimary.html" >Primary</a></li>
+            <li ><a href="FPSecondary.html" >Secondary</a></li>
+            <li ><a href="FPPost.html" >Post-Secondary</a></li>
+            <li ><a href="FPStats.html"  id="current">Statistics</a></li>
+            
+        </ul>
+    </div>
+    <div class="container"><!--Container for inner navigation-->
+        <div class="innav">
+            <h5 class="innav">Go to:</h5>
+            <ul class="innav"><!--Internal navigation to navigate the page-->
+                <li class="innav"><a href="#ParentEdu">Parental Education Levels</a></li>
+                <li class="innav"><a href="#Migration">Migration Background</a></li>
+                <li class="innav"><a href="#Childcare">Childcare Percentages</a></li>
+                <li class="innav"><a href="#Sources">Sources</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Container for the main content. Container can be copied to use multiple times-->     
+        <div class="container">
+        <div class="left"><!--Container for content on the left-->
+            <img src="ParentEdu.svg" alt="Chart showing the percentage of students attending Gymnasium, Realschule, Hauptschule or Gesamtschule depending on the parents' level of education. The children of those with higher levels were more likely to attend Gymnasium, while the lower levels were more likely to attend Hauptschule." class="magnify">
+            <p><a href="#Sources">Source 2</a></p>
+        </div>
+        <div class="right"><!--Container for content on the right-->
+            <h4 id="ParentEdu">Parental Education Levels</h4>
+            <p>The parental level of education is one of the highest indicators for which school a student will attend after grade school. The chart on the left shows the correlation in the year 2015 between the highest degree the parents earned and the school the children went on to attend. Children whose parents had a high level of education went on to attend the Gymnasium in 61% of cases compared to 14% in the lower level of education category. On the other hand, those with the lower level of education were far more likely to attend the Hauptschule at 22%, which was only at 3% for the higher education category.</p>
+        </div>
+    </div>     
+<!--End of one inner navigation container Copy until here-->
+        <!--Container for the main content. Container can be copied to use multiple times-->     
+        <div class="container">
+        <div class="left"><!--Container for content on the left-->
+            <img src="Migration.svg" alt="Chart showing the percentage of students with a family background of migration attending Grundschule (28%), Hauptschule (38.7%), Realschule (12.4%), Gymnasium (11.8%) and Gesamtschule (28.3%) and the average (22.3%)." class="magnify">
+            <p><a href="#Sources">Source 3</a></p>
+        </div>
+        <div class="right"><!--Container for content on the right-->
+            <h4 id="Migration">Migration Background</h4>
+            <p>Students with a family background of migration are often disadvantaged in school. On the right you will see a statistic about the percentage of students with a family background of migration at the different types of schools. Below you will see a video by immigrant students describing difficulties they faced when coming to Germany to study.</p>
+            <iframe width="95%" height="300" src="https://www.youtube.com/embed/HP6IPCfN79w" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>     
+<!--End of one inner navigation container Copy until here-->
+        
+<!--Container for the main content. Container can be copied to use multiple times-->     
+        <div class="container">
+        <div class="left"><!--Container for content on the left-->
+            <h4 id="Childcare">Childcare Percentages</h4>
+            <p>Early childcare in the form of Kindergarten (ages 3-6) and Kinderkrippe (under 3 years) is very beneficial to children. In groups with other children they learn essential social skills. A variety of activities, both free and lead by teachers, help children improve their motor skills. Language skills are also developed, which is especially beneficial for children who don’t speak German at home. Most children in Germany do attend at least Kindergarten, and many attend a Kinderkrippe, but the percentages of children who come from a background of migration who attend childcare still lie under the percentages of children without this background. This is concerning, because these children would especially benefit. For percentages see the chart to the right.</p>
+        </div>
+        <div class="right"><!--Container for content on the right-->
+            <img src="ChildcareMigrationChart.svg" alt="Chart showing the percentage of children in childcare based on age and migration background. Children with Migration background have lower rates of childcare attendance for all age categories" class="magnify">
+            <p><a href="#Sources">Source 1</a></p>
+        </div>
+    </div>     
+<!--End of one inner navigation container Copy until here-->
+  
+        
+    <div class="footer"><!--Footer-->
+        <p class="sign">&copy;2020 Lucia Johnson
+            <br>
+            This page was made for the class "Introduction to Web Technologies" with Mehdi Barati at the <a href="https://www.albany.edu/">University at Albany</a>.
+            <br>
+            <a href="mailto:lejohnson@albany.edu">Contact me</a>
+        </p>
+        <p>Disclaimer: The school system on this page is specific to the German state of Bavaria. Other German states may have slight differences in their system.</p>
+        <p id="Sources">Sources: 
+            <br>
+            Unless otherwise specified images are my own 
+            <br>
+            Background image by <a href="https://pixabay.com/users/Shafin_Protic-16278454/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5375259">Shafin Al Asad Protic</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5375259">Pixabay</a>
+            <br>
+            Code to enlarge images via <a href="http://www.dynamicdrive.com/dynamicindex4/imagemagnify.htm">Dynamic Drive</a>
+            <br>
+            Code for mobile menu via <a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">W3 Schools</a>
+            <br>
+            1. <a href="https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Soziales/Kindertagesbetreuung/Tabellen/betreuungsquote-migration-unter6jahren-aktuell.html;jsessionid=6AD39506162BE30E08F20BEA63B0B53E.internet8742">Statistisches Bundesamt</a>
+            <br>
+            2. <a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2016/09/PD16_312_122.html">Statistisches Bundesamt</a>
+            <br>
+            3. <a href="Bayerns-Schulen-in-Zahlen-2018-2019.pdf">2018/19 Numbers Report in Bavarian schools</a>via<a href="https://www.km.bayern.de/statistik">Bayerisches Landesamt f&uuml;r Statistik</a>
+        </p>
+    </div>
+    </div>
+</body>
+</html>

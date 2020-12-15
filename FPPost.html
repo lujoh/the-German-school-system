@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>The German School System
+    </title>
+    <link rel="stylesheet" href="FPCSS.css" type="text/css">
+    <!--Link to CSS file-->
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+</head>
+<body> 
+    <div class="outline">
+    <div class="header"> <!--The header div-->
+        <h1>The German School System</h1>
+    </div>
+    <div class="nav" id="Navigation"><!--Navigation Bar-->
+        <ul>
+            <li ><a href="#" class="menuIcon" onclick="toggleNav()">&#9776;</a></li>
+            <li ><a href="FPHome.html" >Homepage</a></li>
+            <li ><a href="FPPrimary.html">Primary</a></li>
+            <li><a href="FPSecondary.html">Secondary</a></li>
+            <li><a href="FPPost.html" id="current">Post-Secondary</a></li>
+            <li><a href="FPStats.html">Statistics</a></li>
+            
+        </ul>
+    </div>
+    <div class="container"><!--Container for inner navigation-->
+        <div class="innav">
+            <h5 class="innav">Go to:</h5>
+            <ul class="innav"><!--Internal navigation to navigate the page-->
+                <li class="innav"><a href="#Options">Options for students after high school</a></li>
+                <li class="innav"><a href="#Requirements">Continuing Education Requirements</a></li>
+                <li class="innav"><a href="#Sources">Sources</a></li>
+            </ul>
+        </div>
+    </div>
+    
+        
+<!--Container for the main content. Container can be copied to use multiple times-->     
+        <div class="container">
+        <div class="left"><!--Container for content on the left-->
+            <h4 id="Options">A Selection of Continuing Education Options</h4>
+            <dl>
+                <dt>Berufsschule im dualen System (dual system apprenticeship)</dt>
+                <dd>-This is an education option that combines practical job experience with theoretical education. Students spend half their time working in an apprenticeship at a business in their field and the other half studying at a Berufsschule (job school) which teaches the theoretical knowledge of the chosen job in addition to general classes such as math, German, politics and sometimes religion. The Dual Apprenticeship is generally a paid position (<a href="#Sources">1</a>).</dd>
+                <dt>Berufsfachschule (vocational school)</dt>
+                <dd>-This option teaches both practical and theoretical information at the school and they often involve multiple internships.</dd>
+                <dt>Fachoberschule (FOS) (technical school)</dt>
+                <dd>-This system allows students to pick a concentration from the subjects, economics and administration, technology, health and social, design, nutrition and housekeeping, agriculture-, organic- and environment technology. The FOS is designed to be done after completing tenth grade and will lead to a subject specific Abitur (Fachabitur)(<a href="#Sources">2</a>).</dd>
+                <dt>Berufsoberschule(BOS)(higher vocational school)</dt>
+                <dd>-This option is similar to the FOS only that it is intended for students who have already completed an apprenticeship or and education at the Befufsfachschule.</dd>
+                <dt>University</dt>
+                <dd>-Universities offer a wide variety of academic degrees, similar to US Universities. Admission to certain degrees is very competitive and is based on the grade average in the Abitur, years of experience in the field and waiting time. Public Universities are tuition free, but sometimes materials such as books do need to be bought. There is financial aid and scholarships available for students to cover living expenses.</dd>
+                <dt>Fachhochschule (University of applied sciences)</dt>
+                <dd>-This option is similar to Universities, but the degrees are more practically focused than academically</dd>
+                <dt>Various evening schools</dt>
+                <dd>-Evening and weekend schools are available for students who didn’t achieve the Quali, Mittlere Reife of Abitur and wish to make up for it</dd>
+            </dl>
+        </div>
+        <div class="right"><!--Container for content on the right-->
+            <img src="Schulweg.jpg" alt="Sign with a child on it ant the words Achtung Schulweg">
+        </div>
+    </div>
+        <div class="container">
+        <div class="middle"><!--Container in the middle to contain table-->
+            <h4 id="Requirements">Continuing education high school degree prerequisites</h4>
+            <p>High school degrees required for these continuing schools</p>
+            <table>
+                <tr>
+                    <th>Education</th>
+                    <th>Quali (Hauptschule)</th>
+                    <th>Mittlere Reife (Realschule)</th>
+                    <th>Abitur (Gymnasium)/ Fachabitur (FOS or BOS)</th>
+                </tr>
+                <tr>
+                    <td>Berufsschule im Dualen System</td>
+                    <td>yes</td>
+                    <td>yes</td>
+                    <td>yes</td>
+                </tr>
+                <tr>
+                    <td>Berufsfachschule</td>
+                    <td>Depends on the school and the subject</td>
+                    <td>yes</td>
+                    <td>yes</td>
+                </tr>
+                <tr>
+                    <td>Fachoberschule</td>
+                    <td>no</td>
+                    <td>yes</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>Berufsoberschule</td>
+                    <td>Only after completed vocational education or at least five years job experience</td>
+                    <td>Only after completed vocational education or at least five years job experience</td>
+                    <td>n/a</td>
+                </tr>
+                <tr>
+                    <td>University</td>
+                    <td>no</td>
+                    <td>no</td>
+                    <td>yes/ Fachabitur only allows access to the same area of study</td>
+                </tr>
+                <tr>
+                    <td>Fachhochschule</td>
+                    <td>no</td>
+                    <td>no</td>
+                    <td>yes/ Fachabitur only allows access to the same area of study</td>
+                </tr>
+            </table>
+        </div>
+    </div>     
+
+  
+        
+    <div class="footer"><!--Footer-->
+        <p class="sign">&copy;2020 Lucia Johnson
+            <br>
+            This page was made for the class "Introduction to Web Technologies" with Mehdi Barati at the <a href="https://www.albany.edu/">University at Albany</a>.
+            <br>
+            <a href="mailto:lejohnson@albany.edu">Contact me</a>
+        </p>
+        <p>Disclaimer: The school system on this page is specific to the German state of Bavaria. Other German states may have slight differences in their system.</p>
+        <p id="Sources">Sources: <br>
+            Unless otherwise specified images are my own 
+            <br>
+            Background image by <a href="https://pixabay.com/users/Shafin_Protic-16278454/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5375259">Shafin Al Asad Protic</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5375259">Pixabay</a>
+            <br>
+            Code for mobile menu via <a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">W3 Schools</a>
+            <br>
+            1. <a href="https://www.sueddeutsche.de/karriere/schulische-ausbildung-wie-laeuft-die-ausbildung-an-berufsfachschulen-ab-1.1627563">https://www.sueddeutsche.de/karriere/schulische-ausbildung-wie-laeuft-die-ausbildung-an-berufsfachschulen-ab-1.1627563</a>
+            <br>
+            2. <a href="https://www.fachabitur-nachholen.de/fos-fachhochschulreife.html">https://www.fachabitur-nachholen.de/fos-fachhochschulreife.html</a>
+        </p>
+    </div>
+    </div>
+    <!--Place to enter script-->
+    <script src="FPfunctions.js" type="text/javascript"></script>
+</body>
+</html>
